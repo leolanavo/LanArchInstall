@@ -33,7 +33,7 @@ chsh -s /bin/zsh $1
 
 # Add sudo power to new user
 echo "Uncomment the %wheel line"
-sleep(3)
+sleep 3
 EDITOR=nano visudo
 
 # Set up passwords
