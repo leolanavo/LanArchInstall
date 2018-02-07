@@ -23,7 +23,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr \
           texstudio texlive-core texlive-lang \
           python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
           jdk9-openjdk openjdk9-doc openjdk9-src racket \
-          opera tty-clock numlockx \
+          opera numlockx \
           --noconfirm
 
 # The vte3-ng dependency will conflict with vte3, so I can`t use
