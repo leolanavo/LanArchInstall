@@ -11,8 +11,6 @@ yaourt -S google-chrome spotify gnome-software \
 # use --noconfirm option
 yaourt -S neovim-symlinks
 
-exit
-
 # Change the greeter for lightdm to webkit2-greeter
 sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/' \
 	/etc/lightdm/lightdm.conf
