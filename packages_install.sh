@@ -2,7 +2,7 @@
 
 # ARGUMENTS:
 #     $1 --> your user
-#     $2 --> the flag for the specific 
+#     $2 --> the flag for the specific
 
 # This part is for the specific drivers needed by each of my systems:
 # - the battery touchpad and bluetooth drivers are for the notebook;
@@ -23,6 +23,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr \
           texstudio texlive-core texlive-lang \
           python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
           jdk9-openjdk openjdk9-doc openjdk9-src racket \
+          opera tty-clock numlockx \
           --noconfirm
 
 # The vte3-ng dependency will conflict with vte3, so I can`t use
@@ -45,7 +46,9 @@ yaourt -S google-chrome spotify gnome-software \
           polybar i3-gaps \
           lightdm-webkit2-greeter \
           sublime-text-dev neofetch light discord \
-          lightdm-webkit2-theme-material2 --noconfirm
+          lightdm-webkit2-theme-material2 \
+          opera-ffmpeg-codecs bash-pipes\
+          --noconfirm
 
 # The neovim-symlinks will try to remove the vi package, so I can`t
 # use --noconfirm option
