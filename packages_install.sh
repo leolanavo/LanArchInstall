@@ -16,7 +16,7 @@ fi
 pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr \
           wpa_supplicant dialog networkmanager openssh network-manager-applet \
           ntp intel-ucode pulseaudio alsa-utils \
-          gnome gdm gnome-extra gnome-tweak-tool \
+          gnome gdm gnome-extra gnome-tweak-tool lightdm \
           file-roller neovim htop evince ranger compton \
           zsh feh maim sxiv mpd pavucontrol wget cmatrix atril \
           emacs gimp inkscape rofi vlc yaourt \
