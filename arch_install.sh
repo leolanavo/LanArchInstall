@@ -11,7 +11,7 @@ locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 
 # Setting up NTP and Time
-ln -sf /usr/share/zoneinfo/Brazil/East > /etc/localtime
+ln -sf /usr/share/zoneinfo/Brazil/East /etc/localtime
 hwclock --systohc
 
 # Hostname setting
