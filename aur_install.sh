@@ -1,10 +1,12 @@
 # AUR packages
 yaourt -S google-chrome spotify gnome-software \
-          polybar i3-gaps \
+          polybar i3-gaps-next-git \
           lightdm-webkit2-greeter \
-          sublime-text-dev neofetch light discord \
+          sublime-text-dev neofetch light \
           lightdm-webkit2-theme-material2 \
-          opera-ffmpeg-codecs bash-pipes tty-clock \
+          bash-pipes tty-clock fetchmirrors \
+          telegram-desktop-bin visual-studio-code-bin \
+          ttf-montserrat otf-cooper-hewitt \
           --noconfirm
 
 # The neovim-symlinks will try to remove the vi package, so I can`t
