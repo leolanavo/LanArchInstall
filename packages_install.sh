@@ -13,9 +13,9 @@ elif [ $2 == "pc" ]; then
     pacman -S nvidia mesa mesa-libgl lib32-mesa-libgl --noconfirm
 fi
 
-pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr \
+pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xorg-xinput \
           wpa_supplicant dialog networkmanager openssh network-manager-applet \
-          ntp intel-ucode pulseaudio alsa-utils xorg-xinput \
+          ntp intel-ucode pulseaudio alsa-utils \
           gnome gdm gnome-extra gnome-tweak-tool lightdm \
           file-roller neovim htop evince ranger compton \
           zsh feh maim sxiv mpd pavucontrol wget cmatrix atril \
@@ -24,7 +24,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr \
           python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
           jdk9-openjdk openjdk9-doc openjdk9-src racket \
           opera numlockx opera-ffmpeg-codecs docker docker-compose
-          python-pip \
+          docker-machine python-pip \
           --noconfirm
 
 # The vte3-ng dependency will conflict with vte3, so I can`t use
