@@ -19,7 +19,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr \
           gnome gdm gnome-extra gnome-tweak-tool lightdm \
           file-roller neovim htop evince ranger compton \
           zsh feh maim sxiv mpd pavucontrol wget cmatrix atril \
-          emacs gimp inkscape rofi vlc yaourt \
+          emacs gimp inkscape rofi vlc yaourt scrot \
           texstudio texlive-core texlive-lang \
           python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
           jdk9-openjdk openjdk9-doc openjdk9-src racket \
