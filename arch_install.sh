@@ -25,7 +25,7 @@ pacman -Sy
 ./packages_install.sh $1 $2
 
 # Add user
-useradd -m -g users -G wheel,storage,power -s /bin/zsh $1
+useradd -m -g users -G wheel,storage,power,docker -s /bin/zsh $1
 
 # Add sudo power to new user
 echo "Uncomment the %wheel line"
