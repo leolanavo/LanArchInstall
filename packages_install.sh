@@ -34,3 +34,4 @@ pacman -S termite
 # Enablem both Network Manager and Lightdm
 systemctl enable NetworkManager.service
 systemctl enable gdm.service
+systemctl enable docker.socket
