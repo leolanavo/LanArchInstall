@@ -9,6 +9,7 @@
 # - the video card drivers are for the desktop.
 if [ $2 == "note" ]; then
     pacman -S acpi libinput bluez bluez-utils blueberry --noconfirm
+    systemctl enable bluetooth.service
 elif [ $2 == "pc" ]; then
     pacman -S nvidia mesa mesa-libgl lib32-mesa-libgl --noconfirm
 fi
