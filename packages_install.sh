@@ -11,7 +11,7 @@ if [ $2 == "note" ]; then
     pacman -S acpi libinput bluez bluez-utils blueberry --noconfirm
     systemctl enable bluetooth.service
 elif [ $2 == "pc" ]; then
-    pacman -S nvidia mesa mesa-libgl lib32-mesa-libgl --noconfirm
+    pacman -S nvidia nvidia-libgl lib32-nvidia-libgl --noconfirm
 fi
 
 pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xorg-xinput \
