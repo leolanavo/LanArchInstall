@@ -23,3 +23,5 @@ sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit
 # Change the theme of the webkit2 to material2
 sudo sed -i 's/webkit_theme        = antergos/webkit_theme        = material2/' \
 	/etc/lightdm/lightdm-webkit2-greeter.conf
+
+sudo systemctl enable -f lightdm.service
