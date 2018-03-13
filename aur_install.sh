@@ -17,9 +17,9 @@ yaourt -S neovim-symlinks
 sudo pacman -S i3lock
 
 # Change the greeter for lightdm to webkit2-greeter
-sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/' \
+sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/' \
 	/etc/lightdm/lightdm.conf
 
 # Change the theme of the webkit2 to material2
-sed -i 's/webkit_theme        = antergos/webkit_theme        = material2/' \
+sudo sed -i 's/webkit_theme        = antergos/webkit_theme        = material2/' \
 	/etc/lightdm/lightdm-webkit2-greeter.conf
