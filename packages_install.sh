@@ -25,7 +25,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xo
           python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
           jdk9-openjdk openjdk9-doc openjdk9-src racket \
           opera numlockx opera-ffmpeg-codecs docker docker-compose
-          docker-machine python-pip \
+          docker-machine python-pip yarn \
           --noconfirm
 
 # The vte3-ng dependency will conflict with vte3, so I can`t use
@@ -36,3 +36,4 @@ pacman -S termite
 systemctl enable NetworkManager.service
 systemctl enable gdm.service
 systemctl enable docker.socket
+systemctl enable docker.service
