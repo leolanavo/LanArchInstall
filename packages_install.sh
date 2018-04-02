@@ -23,7 +23,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xo
           texstudio texlive-core texlive-lang \
           python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
           jdk9-openjdk openjdk9-doc openjdk9-src racket \
-          opera numlockx opera-ffmpeg-codecs docker docker-compose
+          opera numlockx opera-ffmpeg-codecs docker docker-compose \
           docker-machine yarn arc-gtk-theme arc-icon-theme lxappearance \
           --noconfirm
 
