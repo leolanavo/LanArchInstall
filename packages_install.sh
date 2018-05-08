@@ -7,7 +7,7 @@
 # - the battery touchpad and bluetooth drivers are for the notebook;
 # - the video card drivers are for the desktop.
 if [ $1 == "note" ]; then
-    pacman -S xf86-video-intel 8acpi libinput bluez bluez-utils blueberry --noconfirm
+    pacman -S xf86-video-intel acpi libinput bluez bluez-utils blueberry --noconfirm
     systemctl enable bluetooth.service
 elif [ $1 == "pc" ]; then
     pacman -S nvidia nvidia-libgl lib32-nvidia-libgl --noconfirm
