@@ -17,7 +17,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xo
           wpa_supplicant dialog networkmanager openssh network-manager-applet \
           ntp intel-ucode pulseaudio alsa-utils \
           gnome gdm gnome-extra gnome-tweak-tool lightdm \
-          file-roller neovim htop evince ranger compton \
+          file-roller neovim htop evince ranger compton terminator \
           zsh feh maim sxiv mpd pavucontrol wget cmatrix atril \
           emacs gimp inkscape rofi vlc scrot imagemagick\
           texstudio texlive-core texlive-lang \
@@ -26,10 +26,6 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xo
           opera numlockx opera-ffmpeg-codecs docker docker-compose \
           docker-machine yarn arc-gtk-theme arc-icon-theme lxappearance \
           --noconfirm
-
-# The vte3-ng dependency will conflict with vte3, so I can`t use
-# --nocofirm option
-pacman -S termite
 
 # Enablem both Network Manager and Lightdm
 systemctl enable NetworkManager.service
