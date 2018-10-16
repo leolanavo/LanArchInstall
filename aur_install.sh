@@ -1,5 +1,10 @@
+# Setup yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
 # AUR packages
-yaourt -S google-chrome spotify gnome-software \
+yay -S google-chrome spotify gnome-software \
           polybar i3-gaps-next-git \
           lightdm-webkit2-greeter \
           sublime-text-dev neofetch light \
@@ -11,7 +16,7 @@ yaourt -S google-chrome spotify gnome-software \
 
 # The neovim-symlinks will try to remove the vi package, so I can`t
 # use --noconfirm option
-yaourt -S neovim-symlinks
+yay -S neovim-symlinks
 
 # This installation occurs here, because of its dependencies
 sudo pacman -S i3lock
