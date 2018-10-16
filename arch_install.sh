@@ -6,7 +6,7 @@
 #     $3 --> your hostname
 
 # Setting up locale
-nano /etc/locale.gen
+echo "en_US.UTF-8 UTF-8\npt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 
@@ -18,19 +18,19 @@ hwclock --systohc
 echo $3 > /etc/hostname
 
 # Expanding MirroList
-nano /etc/pacman.conf
+sed -i 's/^#Color/Color/g' /etc/pacman.conf
+sed -i 's/^#TotalDownload/TotalDownload\nILoveCandy/g' /etc/pacman.conf
+echo "[multilib]\nInclude = /etc/pacman.d/mirrolist" >> /etc/pacman.conf
 pacman -Sy
 
 # Packages
-./packages_install.sh $1 $2
+./packages_install.sh $2
 
 # Add user
 useradd -m -g users -G wheel,storage,power,docker -s /bin/zsh $1
 
 # Add sudo power to new user
-echo "Uncomment the %wheel line"
-sleep 3
-EDITOR=nano visudo
+sed -ri 's/^#( %wheel ALL=\(ALL\) ALL$)/\1/g' /etc/sudoers
 clear
 
 # Set up passwords
