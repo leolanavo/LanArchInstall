@@ -21,8 +21,7 @@ pacman -S xorg-server xorg-xinit xorg-twm xorg-xclock xterm xclip xorg-xrandr xo
           zsh feh maim sxiv mpd pavucontrol wget cmatrix atril \
           emacs gimp inkscape rofi vlc scrot imagemagick\
           texstudio texlive-core texlive-lang \
-          python3 ruby nodejs npm jre9-openjdk-headless jre9-openjdk \
-          jdk9-openjdk openjdk9-doc openjdk9-src racket \
+          python3 ruby nodejs npm go go-tools crystal shards \
           opera numlockx opera-ffmpeg-codecs docker docker-compose \
           docker-machine yarn arc-gtk-theme arc-icon-theme lxappearance \
           --noconfirm
