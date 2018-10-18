@@ -6,7 +6,7 @@
 #     $3 --> your hostname
 
 # Setting up locale
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
@@ -21,8 +21,9 @@ echo $3 > /etc/hostname
 # Expanding MirroList
 sed -i 's/^#Color/Color/g' /etc/pacman.conf
 sed -i 's/^#TotalDownload/TotalDownload\nILoveCandy/g' /etc/pacman.conf
+sed -i 's/^#[multilib]\n#Include/[multilib]\nInclude/g' /etc/pacman.conf
 echo "[multilib]" >> /etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrolist" >> /etc/pacman.conf
+echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 pacman -Sy
 
 # Packages

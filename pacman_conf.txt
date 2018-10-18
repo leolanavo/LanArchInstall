@@ -1,6 +1,0 @@
-Color
-ILoveCandy
-TotalDownload
-
-[multilib]
-Include = /etc/pacman.d/mirrorlist
