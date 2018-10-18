@@ -21,7 +21,6 @@ echo $3 > /etc/hostname
 # Expanding MirroList
 sed -i 's/^#Color/Color/g' /etc/pacman.conf
 sed -i 's/^#TotalDownload/TotalDownload\nILoveCandy/g' /etc/pacman.conf
-sed -i 's/^#[multilib]\n#Include/[multilib]\nInclude/g' /etc/pacman.conf
 echo "[multilib]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 pacman -Sy
