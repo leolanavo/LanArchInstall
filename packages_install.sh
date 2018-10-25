@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # ARGUMENTS:
-#     $1 --> the flag for the specific
+driver=$1   # $1 --> the flag for the specific driver
 
 # This part is for the specific drivers needed by each of my systems:
 # - the battery touchpad and bluetooth drivers are for the notebook;
 # - the video card drivers are for the desktop.
-if [ $1 == "note" ]; then
+if [ $driver == "note" ]; then
     pacman -S xf86-video-intel acpi libinput bluez bluez-utils blueberry --noconfirm
     systemctl enable bluetooth.service
-elif [ $1 == "pc" ]; then
+elif [ $driver == "pc" ]; then
     pacman -S nvidia nvidia-libgl lib32-nvidia-libgl --noconfirm
 fi
 
