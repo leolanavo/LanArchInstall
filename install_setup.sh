@@ -1,25 +1,25 @@
 #!/bin/bash
 
 # ARGUMENTS:
-#   $1 -> Root partition
-#   $2 -> Boot partition
-#   $3 -> Swap partition
+root=$1   # $1 -> Root partition
+boot=$2   # $2 -> Boot partition
+swap=$3   # $3 -> Swap partition
 
 # Change keyboard layout
 loadkeys br-abnt2
 
 # Setup Swap
-mkswap $3
-swapon $3
+mkswap $swap
+swapon $swap
 
 # Setup Root
-mkfs.ext4 $1
-mount $1 /mnt
+mkfs.ext4 $root
+mount $root /mnt
 mkdir /mnt/boot
 
 # Setup Boot
-mkfs.fat -F32 $2
-mount $2 /mnt/boot
+mkfs.fat -F32 $boot
+mount $boot /mnt/boot
 
 # Install basic kernel and some developer packages
 pacstrap /mnt base base-devel
