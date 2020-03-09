@@ -42,12 +42,8 @@ pacman -S docker docker-compose docker-machine --noconfirm
 # Langs
 pacman -S python3 python-pip ruby nodejs npm go go-tools crystal shards yarn --noconfirm
 
-# Browser
-pacman -S opera opera-ffmpeg-codecs --noconfirm
-
 # Display Managers
-pacman -S gnome gnome-extra gnome-tweak-tool i3-gaps \
-    lightdm lightdm-webkit2-greeter --noconfirm
+pacman -S plasma kde-applications i3-gaps lightdm lightdm-webkit2-greeter --noconfirm
 
 # Utils
 pacman -S file-roller numlockx lxappearance \
